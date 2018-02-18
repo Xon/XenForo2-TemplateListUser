@@ -1,0 +1,12 @@
+<xf:macro template="sv_list_users" name="info" arg-users="" arg-secondary_group_ids="" arg-not_secondary_group_ids="">
+    <xf:foreach loop="$users" value="$user">
+        <div class="contentRow">
+            <div class="contentRow-figure">
+                <xf:avatar user="$user" size="s" notooltip="true" />
+            </div>
+            <div class="contentRow-main">
+                <h3 class="contentRow-header"><xf:username user="$user" rich="true" notooltip="true" /></h3>
+            </div>
+        </div>
+    </xf:foreach>
+</xf:macro>
