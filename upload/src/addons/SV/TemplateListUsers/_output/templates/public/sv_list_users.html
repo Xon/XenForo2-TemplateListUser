@@ -1,4 +1,6 @@
-<xf:macro template="sv_list_users" name="info" arg-users="" arg-secondary_group_ids="" arg-not_secondary_group_ids="">
+<xf:macro template="sv_list_users" name="info"
+          arg-users="{{ [] }}"
+          arg-criteria="!">
     <xf:foreach loop="$users" value="$user">
         <div class="contentRow">
             <div class="contentRow-figure">

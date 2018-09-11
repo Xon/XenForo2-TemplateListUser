@@ -21,10 +21,9 @@ class Listener
         /** @var User $searcher */
         $searcher = \XF::app()->searcher('XF:User');
 
-        $search = array_intersect_key($arguments, array_flip(['secondary_group_ids', 'not_secondary_group_ids', 'user_id']));
-        if ($search)
+        if (isset($arguments['criteria']))
         {
-            $searcher->setCriteria($search);
+            $searcher->setCriteria($arguments['criteria']);
             $arguments['users'] = $searcher->getFinder()->fetch();
         }
         else
