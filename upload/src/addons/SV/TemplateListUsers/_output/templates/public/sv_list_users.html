@@ -1,14 +1,15 @@
 <xf:macro template="sv_list_users" name="info"
           arg-users="{{ [] }}"
+          arg-wrapper="li"
           arg-criteria="!">
     <xf:foreach loop="$users" value="$user">
-        <div class="contentRow">
+        <{$wrapper} class="contentRow">
             <div class="contentRow-figure">
                 <xf:avatar user="$user" size="s" notooltip="true" />
             </div>
             <div class="contentRow-main">
                 <h3 class="contentRow-header"><xf:username user="$user" rich="true" notooltip="true" /></h3>
             </div>
-        </div>
+        </{$wrapper}>
     </xf:foreach>
 </xf:macro>
