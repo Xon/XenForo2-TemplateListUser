@@ -9,6 +9,19 @@
     "faq_url": "",
     "support_url": "",
     "extra_urls": [],
-    "require": [],
+    "require": {
+        "SV/StandardLib": [
+            2001220000,
+            "Standard Library by Xon v1.22.0+"
+        ],
+        "XF": [
+            "2.1.0",
+            "XenForo 2.1.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
+    },
     "icon": "fa-users"
 }
