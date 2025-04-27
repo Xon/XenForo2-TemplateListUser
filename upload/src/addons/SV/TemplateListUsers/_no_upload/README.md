@@ -4,8 +4,7 @@ Fetch lists of users for templates
 
 ## Usage
 ```
-<xf:macro template="sv_list_users" 
-          name="info"
+<xf:macro name="sv_list_users::info"
           arg-criteria="{{ [] }} "
           />
 ```
